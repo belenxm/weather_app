@@ -1,7 +1,9 @@
 //import React, { useState } from 'react'
 //import axios from 'axios'
 import Search from './components/search/search';
+import CurrentWeather from './components/current-weather/current-weather';
 import './App.css';
+
 
 function App() {
 
@@ -14,6 +16,8 @@ const handleOnSearchChange = (searchData) => {
   return (
     <div className='container'>
       <Search onSearchChange = {handleOnSearchChange} />
+      <CurrentWeather />
+
     </div>
   );
 }
