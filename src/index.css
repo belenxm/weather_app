@@ -2,6 +2,11 @@ body {
   margin: 0;
   display: flex;
   font-family: "Roboto", Arial !important;
-  background-color: #213547;
+  background-color: #dce5ed;
+}
+
+#root {
+  width: 1000px;
+  margin-left: 45px;
 }
 

@@ -5,6 +5,7 @@ import CurrentWeather from "./components/current-weather/current-weather";
 import { WEATHER_API_URL, WEATHER_API_KEY } from "./components/api";
 import "./App.css";
 import { useState } from "react";
+import Forecast from "./components/forecast/forecast";
 
 function App() {
   // const url =`https://api.openweathermap.org/data/2.5/weather?q=dallas&appid=21c4db6fd22732be9be6e67f5965df4c`
@@ -40,6 +41,7 @@ function App() {
     <div className="container">
       <Search onSearchChange={handleOnSearchChange} />
       {currentWeather && <CurrentWeather data={currentWeather} />}
+      {forecast && <Forecast data={forecast} />}
     </div>
   );
 }
